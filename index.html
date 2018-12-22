@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Ahmed Elshreif">
+    <link rel="icon" href="icons/icon.png">
+
+    <title>Book Cover page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h2>Cover Page form</h2>
+        <p class="lead">please write your data on the left to see the cover of the book.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your Cover Page</span>
+            <span class="badge badge-secondary badge-pill"></span>
+          </h4>
+
+              <div class="col-xl-6 col-md-6 col-sm-12" style= " height: 400px; max-width: 960px;  padding: 2%;
+              border: 5px solid black;
+              border-radius: 10px;" id="it">
+            <p  id="one" style="text-align: center; font-size: 150%" >put head_title </p>
+            <p  id="two"  style="text-align: center; font-size: 100%"> Put Book sub title</p>
+            <p  id="three" style="text-align: center; font-size: 70%"> name </p>
+            <div class="container" >
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p id="four" style="font-size:75%;" >Put Auther Name </p>
+                  <p id="five" style="font-size:75%;"> Put Publisher</p>
+            </div>
+            <p class="h1 red" id="six" style="text-align: center; font-style: 175%"> </p>
+      </div>
+    </div>
+        <!---------------------------------------------------------------------->
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Your Data:</h4>
+          <form class="needs-validation" novalidate action=""  id="dat">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Auther First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Auther Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="mb-3">
+              <label for="address">Book Title</label>
+              <input type="text" class="form-control" id="title" required>
+              <div class="invalid-feedback">
+                Please enter your Book Title.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Book Subtitle <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="subtitle">
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Publisher</label>
+                <input type="text" class="form-control" id="publisher" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label for="year">Publishing Year:</label>
+                <select class="custom-select d-block w-100" id="year" required>
+                  <option value="">Choose...</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                  <option>2009</option>
+                  <option>2008</option>
+                  <option>2007</option>
+                  <option>2006</option>
+                  <option>2005</option>
+                  <option>2004</option>
+                  <option>2003</option>
+                  <option>2002</option>
+                  <option>2001</option>
+                  <option>2000</option>
+                  <option>1999</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid year.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="address">Cover color</label>
+              <div class="form-group">
+                  <input required id="text"class="color form-control" name="bg_color" placeholder="Background color"
+                      type="color" value="#FFFF9F" />
+              </div>
+            </div>
+
+            <hr class="mb-4">
+            <button id="btn" class="btn btn-primary btn-lg btn-block" type="submit">Continue to the cover</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2018 Ahmed Elshreif</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+     
+        $('#dat').submit(function(e){
+          e.preventDefault();
+          let color = $(".color").val();
+          $('#it').css( {background:color});
+          $('#one').text($('#title').val());
+          $('#two').text($('#subtitle').val());
+          $('#three').text(  $('#firstName').val() + " "  + $('#lastName').val());
+          $('#four').text($('#publisher').val());
+          $('#five').text($('#year').val());
+        }
+          );
+  
+      </script>
+  </body>
+</html>
